@@ -3,7 +3,15 @@
 import { motion } from 'framer-motion';
 import ServiceCard from './ServiceCard';
 
-const SERVICES = [
+interface Service {
+  id: number;
+  title: string;
+  description: string;
+  hasPortfolio: boolean;
+  animation: 'none' | 'scanlines' | 'aperture' | 'grid';
+}
+
+const SERVICES: Service[] = [
   {
     id: 1,
     title: 'Design Graphique',
