@@ -3,10 +3,14 @@
 import { motion } from 'framer-motion';
 
 interface AnimationPlaceholderProps {
-  type: 'scanlines' | 'aperture' | 'grid';
+  type: 'none' | 'scanlines' | 'aperture' | 'grid';
 }
 
 export default function AnimationPlaceholder({ type }: AnimationPlaceholderProps) {
+  if (type === 'none') {
+    return null;
+  }
+
   if (type === 'scanlines') {
     return (
       <div className="w-full h-full relative overflow-hidden bg-black flex items-center justify-center">
