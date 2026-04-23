@@ -12,6 +12,7 @@ module.exports = {
         'darkGray': '#666666',
         'midGray': '#979797',
         'lightGray': '#eeeeee',
+        'blue': '#0088cc',
         'accentBlue': '#0088cc',
       },
       spacing: {
@@ -19,6 +20,7 @@ module.exports = {
       },
       fontFamily: {
         'sans': ['-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', 'sans-serif'],
+        'serif': ['Georgia', '"Times New Roman"', 'serif'],
       },
     },
   },

@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import CustomCursor from '@/components/CustomCursor';
 
 export const metadata: Metadata = {
   title: 'Ariel Kami — Creative Branding & Visual Storytelling',
@@ -30,7 +31,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
+      <head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+      </head>
       <body className="bg-white text-dark overflow-x-hidden">
+        <CustomCursor />
         <Navbar />
         <main>{children}</main>
         <Footer />

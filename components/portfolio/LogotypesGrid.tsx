@@ -13,7 +13,6 @@ const LOGOTYPES = [
   { id: 6, grayscale: '/assets/logotypes/grayscale/logo-06-grayscale.svg', color: '/assets/logotypes/color/logo-06-color.svg' },
   { id: 7, grayscale: '/assets/logotypes/grayscale/logo-07-grayscale.svg', color: '/assets/logotypes/color/logo-07-color.svg' },
   { id: 8, grayscale: '/assets/logotypes/grayscale/logo-08-grayscale.svg', color: '/assets/logotypes/color/logo-08-color.svg' },
-  { id: 9, grayscale: '/assets/logotypes/grayscale/logo-09-grayscale.svg', color: '/assets/logotypes/color/logo-09-color.svg' },
   { id: 10, grayscale: '/assets/logotypes/grayscale/logo-10-grayscale.svg', color: '/assets/logotypes/color/logo-10-color.svg' },
   { id: 11, grayscale: '/assets/logotypes/grayscale/logo-11-grayscale.svg', color: '/assets/logotypes/color/logo-11-color.svg' },
   { id: 12, grayscale: '/assets/logotypes/grayscale/logo-12-grayscale.svg', color: '/assets/logotypes/color/logo-12-color.svg' },
@@ -33,7 +32,7 @@ export default function LogotypesGrid() {
       viewport={{ once: true, margin: '-100px' }}
     >
       <h3 className="text-2xl sm:text-3xl font-light mb-8 sm:mb-12">Logotypes</h3>
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-6 sm:gap-8">
         {LOGOTYPES.map((logo, idx) => (
           <motion.div
             key={logo.id}

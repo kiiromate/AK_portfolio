@@ -5,29 +5,29 @@ import { motion } from 'framer-motion';
 const STEPS = [
   {
     number: '01',
-    title: 'On échange',
-    description: 'Compréhension de votre vision, vos objectifs et votre marché.',
+    title: 'Échange',
+    description: 'On définit ensemble vos besoins et objectifs.',
   },
   {
     number: '02',
     title: 'Direction créative',
-    description: 'Exploration créative et définition de l\'approche stratégique.',
+    description: 'Je propose une orientation visuelle claire.',
   },
   {
     number: '03',
     title: 'Production',
-    description: 'Conception et réalisation des assets et livrables.',
+    description: 'Création des livrables, itérations incluses.',
   },
   {
     number: '04',
-    title: 'Livraison & impact',
-    description: 'Présentation finale et suivi de la mise en œuvre.',
+    title: 'Visibilité',
+    description: 'Vos supports sont prêts à marquer les esprits.',
   },
 ];
 
 export default function Approach() {
   return (
-    <section className="w-full py-20 sm:py-32 px-6 bg-lightGray">
+    <section id="approach" className="w-full py-20 sm:py-32 px-6 bg-lightGray">
       <div className="max-w-7xl mx-auto">
         <motion.h2
           className="text-4xl sm:text-5xl font-light mb-12 sm:mb-16"
@@ -36,7 +36,7 @@ export default function Approach() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true, margin: '-100px' }}
         >
-          Approche
+          Comment ça marche
         </motion.h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">

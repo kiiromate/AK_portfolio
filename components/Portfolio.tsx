@@ -29,7 +29,7 @@ export default function Portfolio() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true, margin: '-100px' }}
         >
-          <h2 className="text-4xl sm:text-5xl font-light mb-8">Travaux</h2>
+          <h2 className="text-4xl sm:text-5xl font-light mb-8">Portfolio</h2>
 
           {/* Category Filter */}
           <div className="flex flex-wrap gap-4 sm:gap-6">
