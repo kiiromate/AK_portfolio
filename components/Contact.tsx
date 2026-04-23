@@ -68,7 +68,7 @@ export default function Contact() {
             width="100%"
             height="100%"
             style={{ border: 0, filter: 'grayscale(1) contrast(0.9)' }}
-            allowFullScreen=""
+            allowFullScreen={true}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
