@@ -8,19 +8,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'dark': '#000000',
+        'dark': '#333333',
         'darkGray': '#666666',
         'midGray': '#979797',
         'lightGray': '#eeeeee',
-        'blue': '#0088cc',
-        'accentBlue': '#0088cc',
+        'blue': '#333333',
+        'accentBlue': '#333333',
       },
       spacing: {
         'safe': 'clamp(1rem, 4vw, 2rem)',
       },
       fontFamily: {
-        'sans': ['-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', 'sans-serif'],
-        'serif': ['Georgia', '"Times New Roman"', 'serif'],
+        'sans': ['var(--font-dm-sans)', 'DM Sans', 'sans-serif'],
+        'serif': ['var(--font-dm-sans)', 'DM Sans', 'sans-serif'],
+        'mono': ['var(--font-dm-sans)', 'DM Sans', 'sans-serif'],
       },
     },
   },

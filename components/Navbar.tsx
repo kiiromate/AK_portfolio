@@ -27,7 +27,7 @@ export default function Navbar() {
     <motion.nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled 
-          ? 'bg-black/95 backdrop-blur-sm shadow-lg' 
+          ? 'bg-[#333333]/95 backdrop-blur-sm shadow-lg' 
           : 'bg-transparent'
       }`}
       initial={{ opacity: 0 }}
@@ -43,7 +43,7 @@ export default function Navbar() {
             width={120}
             height={40}
             className={`transition-all duration-500 ${
-              isScrolled ? 'h-10 w-auto' : 'h-8 w-auto'
+              isScrolled ? 'h-20 w-auto brightness-0 invert' : 'h-20 w-auto'
             }`}
           />
         </a>

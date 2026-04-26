@@ -7,17 +7,17 @@ const DESIGN_ITEMS = [
   {
     id: 1,
     image: '/assets/design-impressions/design-impressions-collage-01.png',
-    alt: 'Design & impressions - Collage 01',
+    alt: 'Design & Impressions - Collage 01',
   },
   {
     id: 2,
     image: '/assets/design-impressions/design-impressions-collage-02.png',
-    alt: 'Design & impressions - Collage 02',
+    alt: 'Design & Impressions - Collage 02',
   },
   {
     id: 3,
     image: '/assets/design-impressions/design-impressions-collage-03.png',
-    alt: 'Design & impressions - Collage 03',
+    alt: 'Design & Impressions - Collage 03',
   },
 ];
 
@@ -31,14 +31,14 @@ export default function DesignImpressionsSection() {
       transition={{ duration: 0.6 }}
       viewport={{ once: true, margin: '-100px' }}
     >
-      <h3 className="text-2xl sm:text-3xl font-light mb-8 sm:mb-12">Design & impressions</h3>
-      
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+      <h3 className="text-2xl sm:text-3xl font-light mb-8 sm:mb-12 text-center">Design & Impressions</h3>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
         {DESIGN_ITEMS.map((item, idx) => (
           <motion.button
             key={item.id}
             onClick={() => setSelectedImage(item.image)}
-            className="relative aspect-video bg-lightGray rounded-sm overflow-hidden group cursor-pointer"
+            className="relative aspect-video rounded-sm overflow-hidden group cursor-pointer"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: idx * 0.1 }}
@@ -55,7 +55,6 @@ export default function DesignImpressionsSection() {
         ))}
       </div>
 
-      {/* Modal */}
       {selectedImage && (
         <motion.div
           className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
@@ -74,7 +73,6 @@ export default function DesignImpressionsSection() {
             <button
               onClick={() => setSelectedImage(null)}
               className="absolute top-4 right-4 z-10 bg-white rounded-full p-2 hover:bg-lightGray transition-colors"
-              aria-label="Close modal"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

@@ -13,8 +13,8 @@ export default function EnseigneSection() {
       transition={{ duration: 0.6 }}
       viewport={{ once: true, margin: '-100px' }}
     >
-      <h3 className="text-2xl sm:text-3xl font-light mb-8 sm:mb-12">Enseigne et affichage</h3>
-      
+      <h3 className="text-2xl sm:text-3xl font-light mb-8 sm:mb-12 text-center">Enseigne et Affichage</h3>
+
       <motion.button
         onClick={() => setIsModalOpen(true)}
         className="relative w-full aspect-video bg-lightGray rounded-sm overflow-hidden group cursor-pointer"
@@ -29,7 +29,6 @@ export default function EnseigneSection() {
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
       </motion.button>
 
-      {/* Modal */}
       {isModalOpen && (
         <motion.div
           className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
@@ -48,7 +47,6 @@ export default function EnseigneSection() {
             <button
               onClick={() => setIsModalOpen(false)}
               className="absolute top-4 right-4 z-10 bg-white rounded-full p-2 hover:bg-lightGray transition-colors"
-              aria-label="Close modal"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

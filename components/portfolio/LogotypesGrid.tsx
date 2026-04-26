@@ -1,19 +1,17 @@
 'use client';
 
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 import LogoCard from './LogoCard';
 
 const LOGOTYPES = [
-  { id: 1, grayscale: '/assets/logotypes/grayscale/logo-01-grayscale.svg', color: '/assets/logotypes/color/logo-01-color.svg' },
-  { id: 2, grayscale: '/assets/logotypes/grayscale/logo-02-grayscale.svg', color: '/assets/logotypes/color/logo-02-color.svg' },
-  { id: 3, grayscale: '/assets/logotypes/grayscale/logo-03-grayscale.svg', color: '/assets/logotypes/color/logo-03-color.svg' },
-  { id: 4, grayscale: '/assets/logotypes/grayscale/logo-04-grayscale.svg', color: '/assets/logotypes/color/logo-04-color.svg' },
-  { id: 5, grayscale: '/assets/logotypes/grayscale/logo-05-grayscale.svg', color: '/assets/logotypes/color/logo-05-color.svg' },
-  { id: 6, grayscale: '/assets/logotypes/grayscale/logo-06-grayscale.svg', color: '/assets/logotypes/color/logo-06-color.svg' },
-  { id: 7, grayscale: '/assets/logotypes/grayscale/logo-07-grayscale.svg', color: '/assets/logotypes/color/logo-07-color.svg' },
-  { id: 8, grayscale: '/assets/logotypes/grayscale/logo-08-grayscale.svg', color: '/assets/logotypes/color/logo-08-color.svg' },
-  { id: 10, grayscale: '/assets/logotypes/grayscale/logo-10-grayscale.svg', color: '/assets/logotypes/color/logo-10-color.svg' },
+  { id: 1,  grayscale: '/assets/logotypes/grayscale/logo-01-grayscale.svg', color: '/assets/logotypes/color/logo-01-color.svg' },
+  { id: 2,  grayscale: '/assets/logotypes/grayscale/logo-02-grayscale.svg', color: '/assets/logotypes/color/logo-02-color.svg' },
+  { id: 3,  grayscale: '/assets/logotypes/grayscale/logo-03-grayscale.svg', color: '/assets/logotypes/color/logo-03-color.svg' },
+  { id: 4,  grayscale: '/assets/logotypes/grayscale/logo-04-grayscale.svg', color: '/assets/logotypes/color/logo-04-color.svg' },
+  { id: 5,  grayscale: '/assets/logotypes/grayscale/logo-05-grayscale.svg', color: '/assets/logotypes/color/logo-05-color.svg' },
+  { id: 6,  grayscale: '/assets/logotypes/grayscale/logo-06-grayscale.svg', color: '/assets/logotypes/color/logo-06-color.svg' },
+  { id: 7,  grayscale: '/assets/logotypes/grayscale/logo-07-grayscale.svg', color: '/assets/logotypes/color/logo-07-color.svg' },
+  { id: 8,  grayscale: '/assets/logotypes/grayscale/logo-08-grayscale.svg', color: '/assets/logotypes/color/logo-08-color.svg' },
   { id: 11, grayscale: '/assets/logotypes/grayscale/logo-11-grayscale.svg', color: '/assets/logotypes/color/logo-11-color.svg' },
   { id: 12, grayscale: '/assets/logotypes/grayscale/logo-12-grayscale.svg', color: '/assets/logotypes/color/logo-12-color.svg' },
   { id: 13, grayscale: '/assets/logotypes/grayscale/logo-13-grayscale.svg', color: '/assets/logotypes/color/logo-13-color.svg' },
@@ -31,8 +29,8 @@ export default function LogotypesGrid() {
       transition={{ duration: 0.6 }}
       viewport={{ once: true, margin: '-100px' }}
     >
-      <h3 className="text-2xl sm:text-3xl font-light mb-8 sm:mb-12">Logotypes</h3>
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-6 sm:gap-8">
+      <h3 className="text-2xl sm:text-3xl font-light mb-8 sm:mb-12 text-center">Logotypes</h3>
+      <div className="grid grid-cols-3 gap-3 sm:gap-4">
         {LOGOTYPES.map((logo, idx) => (
           <motion.div
             key={logo.id}

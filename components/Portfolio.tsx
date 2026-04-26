@@ -14,16 +14,17 @@ export default function Portfolio() {
   const categories = [
     { id: 'all', label: 'Tous' },
     { id: 'logotypes', label: 'Logotypes' },
-    { id: 'enseigne', label: 'Enseigne et affichage' },
-    { id: 'design', label: 'Design & impressions' },
+    { id: 'enseigne', label: 'Enseigne et Affichage' },
+    { id: 'design', label: 'Design & Impressions' },
   ];
 
   return (
     <section id="portfolio" className="w-full py-20 sm:py-32 px-6 bg-white">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-4xl mx-auto">
+
         {/* Section Header */}
         <motion.div
-          className="mb-12 sm:mb-16"
+          className="mb-12 sm:mb-16 text-center"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
@@ -32,7 +33,7 @@ export default function Portfolio() {
           <h2 className="text-4xl sm:text-5xl font-light mb-8">Portfolio</h2>
 
           {/* Category Filter */}
-          <div className="flex flex-wrap gap-4 sm:gap-6">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
             {categories.map((cat) => (
               <button
                 key={cat.id}
@@ -54,11 +55,9 @@ export default function Portfolio() {
           {(activeCategory === 'all' || activeCategory === 'logotypes') && (
             <LogotypesGrid />
           )}
-
           {(activeCategory === 'all' || activeCategory === 'enseigne') && (
             <EnseigneSection />
           )}
-
           {(activeCategory === 'all' || activeCategory === 'design') && (
             <DesignImpressionsSection />
           )}
